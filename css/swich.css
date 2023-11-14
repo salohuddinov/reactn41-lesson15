@@ -1,0 +1,41 @@
+:root {
+    --switch-height: 25px;
+    --circle-size: 20px;
+    --switch-padding: calc((var(--switch-height) - var(--circle-size)) / 2);
+    --switch-color: grey;
+    --circle-color: black;
+    --switch-transtion: 0.5s;
+}
+
+form {
+    padding: 50px;
+}
+
+.switch {
+    width: calc(2 * var(--circle-size) + 2 * var(--switch-padding));
+    height: var(--switch-height);
+    padding: var(--switch-padding);
+    border-radius: calc(var(--switch-height) / 2);
+    transition: var(--switch-transtion);
+    appearance: none;
+    background-color: var(--switch-color);
+}
+
+.switch::after {
+    content: "";
+    display: inline-block;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    transition: var(--switch-transtion);
+    background-color: var(--circle-color);
+}
+
+.switch:checked {
+    background-color: var(--circle-color);
+}
+
+.switch:checked::after {
+    margin-left: var(--circle-size);
+    background-color: var(--switch-color);
+}

@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger {
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.notnowa img {
+    display: block;
+    margin-left: 940px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    width: 71.094px;
+    height: 35.501px;
+    flex-shrink: 0;
+}
+
+.notnowa button {
+    display: block;
+    margin-left: 1025px;
+    margin-top: -65px;
+    margin-bottom: 30px;
+    width: 71.094px;
+    height: 35.501px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #10CD45;
+}
+
+
+.koko h3 {
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: 865px;
+    width: 159px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #252733;
+    text-align: right;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+
+.koko img {
+    display: inline-block;
+    margin-left: 1050px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    stroke-width: 1.5px;
+    stroke: #DFE0EB
+}
+
+main.table {
+    width: 82vw;
+    height: 850px;
+    background-color: #fff5;
+    box-shadow: 0 .4px .8px #0005;
+    border-radius: .8px;
+    overflow: hidden;
+}
+
+.table__header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8px 1px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table__header .input-group {
+    width: 35%;
+    height: 100%;
+    background-color: #fff5;
+    padding: 0 .8px;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s;
+}
+
+.table__header .input-group:hover {
+    width: 45%;
+    background-color: #fff9;
+    box-shadow: 0 .1px .4px #0002;
+}
+
+.table__header .input-group img {
+    width: 1.2px;
+    height: 1.2px;
+}
+
+.table__header .input-group input {
+    width: 100%;
+    padding: 0 .5px 0 .3px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.table__body {
+    width: 95%;
+    background-color: #fffb;
+
+    margin: .8px auto;
+    border-radius: .6px;
+    overflow: auto;
+    overflow: overlay;
+}
+
+.table__body::-webkit-scrollbar {
+    width: 0.5px;
+    height: 0.5px;
+}
+
+.table__body::-webkit-scrollbar-thumb {
+    border-radius: .5px;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+}
+
+td img {
+    width: 66px;
+    height: 66px;
+    margin-right: .25px;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+.status {
+    padding: .10px 0;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.status.delivered {
+    background-color: #86e49d;
+    color: #006b21;
+}
+
+.status.cancelled {
+    background-color: #d893a3;
+    color: #b30021;
+}
+
+.status.pending {
+    background-color: #ebc474;
+}
+
+.status.shipped {
+    background-color: #6fcaea;
+}
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 32.1px;
+    }
+}
+
+thead th span.icon-arrow {
+    display: inline-block;
+    width: 20.3px;
+    height: 30.3px;
+    border-radius: 50%;
+    border: 5.4px solid transparent;
+
+    text-align: center;
+    font-size: 40px;
+
+    margin-left: .25px;
+    transition: .2s ease-in-out;
+}
+
+thead th:hover span.icon-arrow {
+    border: 5.4px solid #6c00bd;
+}
+
+thead th:hover {
+    color: #6c00bd;
+}

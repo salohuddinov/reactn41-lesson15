@@ -1,0 +1,264 @@
+@import "common.css";
+@import "close.css";
+@import "switch.css";
+@import "dark.css";
+
+
+
+:root {
+    width: 300px;
+    height: 80vh;
+}
+
+aside,
+header,
+footer,
+main {
+    position: fixed;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+header,
+footer,
+main {
+    left: 300px;
+    width: 850px;
+    ;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width:300px;
+    border-right: 2px solid rgb(250, 247, 247);
+    overflow-y: scroll;
+    background-color: black;
+}
+
+.start img {
+    margin-left: -140px;
+}
+
+.start a {
+    margin-left: 55px;
+    color: #A4A6B3;
+    /* Bold/19px */
+    font-family: Mulish;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    opacity: 0.7;
+}
+
+.logo-link {
+    font-size: 40px;
+}
+
+.close-title {
+    display: none;
+}
+
+.nav-item {
+    margin: 30px 0;
+}
+
+.nav-link {
+    display: flex;
+    gap: 15px;
+    white-space: nowrap;
+    width: 159px;
+    color: #DDE2FF;
+    padding: 15px 0 ;
+    /* Regular/16px */
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.nav-link span {
+    transition: 0.5s;
+}
+
+.bottom-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.logout-btn,
+.mode-btn {
+    display: flex;
+    gap: 15px;
+    background-color: transparent;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.mode-btn {
+    transition: 0.5s;
+    color: #DDE2FF;
+}
+
+.logout-btn span {
+    color: #DDE2FF;
+    transition: 0.5s;
+}
+
+
+
+.hamburger {
+    background-color: transparent;
+    font-size: 25px;
+}
+
+main {
+    width: 1100px;
+    top: 10px;
+    height: 100vh;
+    overflow: auto;
+}
+
+
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.table {
+    width: 85vw;
+    height: 90vh;
+    background-color: #fff5;
+
+}
+
+
+
+table {
+    width: 1100px;
+    height: 100vh;
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 10;
+    left: 10px;
+    background-color: #d5d1defe;
+    cursor: pointer;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+thead th span.icon-arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1.4px solid transparent;
+    text-align: center;
+    font-size: 600px;
+    margin-left: 10px;
+    transition: .1s;
+}
+
+thead th:hover span.icon-arrow {
+    border: 1.5px solid #6c00bd;
+}
+
+thead th:hover {
+    color: #6c00bd;
+}
+
+
+.notnowa img {
+    display: block;
+    margin-left: 940px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    width: 71.094px;
+    height: 35.501px;
+    flex-shrink: 0;
+}
+
+.notnowa button {
+    display: block;
+    margin-left: 1025px;
+    margin-top: -65px;
+    margin-bottom: 30px;
+    width: 71.094px;
+    height: 35.501px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #10CD45;
+}
+
+
+.koko h3 {
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: 865px;
+    width: 159px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #252733;
+    text-align: right;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+
+.koko img {
+    display: inline-block;
+    margin-left: 1050px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    stroke-width: 1.5px;
+    stroke: #DFE0EB
+}

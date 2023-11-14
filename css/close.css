@@ -1,0 +1,24 @@
+.close,
+.close~* {
+    --aside-width: 75px;
+}
+
+.close .nav-link span {
+    opacity: 0;
+}
+
+.close .title {
+    display: none;
+}
+
+.close .close-title {
+    display: block;
+}
+
+.close .logout-btn span {
+    opacity: 0;
+}
+
+.close .mode-btn {
+    transform: translate(-150px);
+}
